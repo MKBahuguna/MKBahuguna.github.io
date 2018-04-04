@@ -12,13 +12,8 @@
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; }
-    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-      
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,8 +22,7 @@
     <![endif]-->
   </head>
   <body>
-      
-    
+
 <!--NAVIGATION-->
 
 <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -46,21 +40,8 @@
                   <ul class="nav navbar-nav navbar-right">
                       <li> <a class="active" href="index.html">Home</a></li>
                       <li> <a href="Ordernow.html">Order Now</a></li>
-                      <li> <a href="#">Pricing</a></li> 
-                      
-                            
-      <!-- Begin MailChimp Signup Form -->
-
-<div id="mc_embed_signup">
-<form action="https://foodway.us18.list-manage.com/subscribe/post?u=bfc75a14cdddb8515df476388&amp;id=3d933f6e65" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bfc75a14cdddb8515df476388_3d933f6e65" tabindex="-1" value=""></div>
-    <div class="clear"><a><input type="submit" value="Join Us" name="Join Us" id="mc-embedded-subscribe" class="button join"></a></div>
-    </div>
-</form>
-</div>
-<!--End mc_embed_signup-->
+                      <li> <a href="#">Pricing</a></li>
+                      <li> <a href="#">Join Us</a></li>
                       <li> <a href="#">Your Cart <i class="fa fa-cart-plus" ></i></a> </li>                     
                   </ul>
               </div>
@@ -110,14 +91,14 @@
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-<!--
+        
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
--->
+
     </a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-<!--      <span class="glyphicon glyphicon-chevron-right"></span>-->
-<!--      <span class="sr-only">Next</span>-->
+     <span class="glyphicon glyphicon-chevron-right"></span>
+     <span class="sr-only">Next</span>
     </a>
   </div>
 </div>
@@ -135,22 +116,22 @@
         <h2 class="wow fadeInUp">Services</h2>
         <p class="wow fadeInUp" data-wow-delay="0.4">Here are some services provided by foodway</p>
         <div class="row">
-            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
-                <i class="fa fa-coffee" aria-hidden="true"></i>
-                <h4>Tea & Coffees</h4>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                <i id="coffee" class="coffee fa fa-coffee" aria-hidden="true"></i>
+                <h4 class="coffee">Tea & Coffees</h4>
             </div>
-            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
-                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                <h4>Pizza & Meals</h4>
+            <div class="col-lg-3 col-md-3 wow fadeInDown" data-wow-delay="0.8s">
+                <i id="pizza" class="pizza fa fa-cutlery" aria-hidden="true"></i>
+                <h4 class="pizza">Pizza & Meals</h4>
             </div>
-            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
-                <i class="fa fa-flash" aria-hidden="true"></i>
-                 <h4>Lightening Delivery</h4>
+            <div class="col-lg-3 col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+                <i id="delivery" class="delivery fa fa-flash" aria-hidden="true"></i>
+                 <h4 class="delivery">Lightening Delivery</h4>
                 
             </div>
-            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
-                <i class="fa fa-glass" aria-hidden="true"></i>
-                <h4>Juices & Shakes</h4>
+            <div class="col-lg-3 col-md-3 wow fadeInRight" data-wow-delay="0.4s">
+                <i id="juices" class="juices fa fa-glass" aria-hidden="true"></i>
+                <h4 class="juices">Juices & Shakes</h4>
                 
             </div>
         </div>
@@ -164,54 +145,50 @@
 <div id="pricing" class="pricing">
    <div class="container">
        <div class="row">
-           <h2 class="wow fadeInUp">Pricing</h2>
-           <p class="wow fadeInUp" data-wow-delay="0.4">Lorem Ipsum passages, and more recently with desktop publishing software</p>
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+           <h2 class="wow fadeInUp">Catagory</h2>
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.4s">
                <div class="packages">
                    <h4>Espresso & Mint Tea</h4>
                    <hr>
                </div>
            </div>
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
                <div class="packages">
                    <h4>Chinese & Tangy Pizza</h4>
                    <hr>        
                </div>
            </div>
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.6s">
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
                <div class="packages">
                    <h4>North & South Indian</h4>
                    <hr>
                </div>
            </div>
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2s">
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.6s">
                <div class="packages">
                    <h4>Biryani & Kebabs</h4>
-                   <hr>
-                  
+                   <hr> 
                </div>
-           </div>
-       </div><br>
-           <div class="row">
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+           </div><br>
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="3.4s">
                <div class="packages">
                    <h4>Desserts & Cakes</h4>
                    <hr>
                </div>
            </div>
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="3.0s">
                <div class="packages">
                    <h4>Snacks & Sandwiches </h4>
                    <hr>        
                </div>
            </div>
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.6s">
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2.6s">
                <div class="packages">
                    <h4>Sea Food & Thai</h4>
                    <hr>
                </div>
            </div>
-           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2s">
+           <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2.2s">
                <div class="packages">
                    <h4>Drinks & Smoothies</h4>
                    <hr>
@@ -231,7 +208,6 @@
    <div class="container">
        <div class="row">
            <h2 class="wow fadeInUp">Meet our team</h2>
-           <p class="wow fadeInUp" data-wow-delay="0.4">Lorem Ipsum passages, and more recently with desktop publishing software</p>
            <div class="col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="2s">
                <img src="images/team/team-1.jpg" class="img-circle" alt="">
                <h4>Aditya Shukla</h4>
@@ -323,12 +299,10 @@
         <div class="row">
             <div class="col-lg-4 col-md-4">
                 <h4 class="wow fadeInUp">Contact Us</h4>
-                <address>
                 <p><i class="fa fa-home" aria-hidden="true"></i> Chandigarh University,Gharuan ,Mohali Punjab-140413</p>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i> cu.16bet1117@gmail.com</p>
                 <p><i class="fa fa-phone" aria-hidden="true"></i> +91-987654321</p>
                 <p><i class="fa fa-globe" aria-hidden="true"></i> www.Foodway.com</p>
-                </address>
             </div>
             <div class="col-lg-4 col-md-4">
                 <h4>About</h4>
@@ -349,8 +323,7 @@
         </div>
     </div>
 </div>
-      
-      
+            
     
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -363,7 +336,5 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
 
 
