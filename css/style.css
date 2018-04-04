@@ -87,9 +87,10 @@ p {
     text-transform: uppercase;
     font-family: 'PT Sans Narrow';
     font-weight: 500;
+    position: relative;
 }
 
-.navbar a, .join{
+.navbar a{
     color: #fff !important;
     opacity: 0.7;
 }
@@ -105,22 +106,15 @@ p {
 
 
 .header{
-    max-height: 600px;
+    height: auto;
     width: 100%;
     padding: 30px 0 30px;
     margin-top: 50px;
     color: #fff;
     border: none;
+    position: relative;
 }
 
-.background-img{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    -webkit-filter: blur(35px); /* Safari 6.0 - 9.0 */
-    filter: blur(5px);
-}
 
 .header h1{
     font-size: 40px;
@@ -133,13 +127,14 @@ p {
     height: 50px;
 }
 #myCarousel-inner{
-height: 580px;    
+height: auto;
 }
 
 @media (max-width:768px){
     .header{
+        position: relative;
         padding: 10px;
-        height: 250px;
+        height: auto;
     }
     
     .header h1{
@@ -153,8 +148,11 @@ height: 580px;
         
         font-size: 12px;
         margin-left: 10px;
-        margin-top: 10px;
-        
+        margin-top: 10px; 
+    }
+    
+    #myCarousel-inner{
+        height:auto; ;
     }
 }
 
@@ -215,7 +213,7 @@ height: 580px;
 @media(max-width:768px) {
     
     .services {
-        
+        position:inherit;
         padding: 30px;
     }
 }
@@ -466,3 +464,4 @@ height: 580px;
     padding: 10px 5px 10px;
     margin: -3px 0 0 5px;
 }
+
