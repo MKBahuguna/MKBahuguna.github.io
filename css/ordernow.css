@@ -1,0 +1,42 @@
+
+.active{
+    border-bottom: 4px solid cyan;
+    opacity: 1.0;
+     color: #fff !important;
+    }
+
+/* NAVIGATION */
+
+.navbar {
+    background-color: #222222 !important;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow';
+    font-weight: 500;
+}
+
+.navbar a {
+    color: #fff !important;
+    opacity: 0.7;
+}
+
+.navbar a:hover{
+    opacity: 1;
+    background-color: black !important;
+}
+
+/* END NAVIGATION */
+
+/* SIDEBAR */
+
+#sidebar{
+    margin-top: 80px;
+}
+#sidebar-container{
+    margin: 20px;
+    float: left;
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+}
+
+
