@@ -4,7 +4,7 @@
  }
 body {
  overflow-x:hidden;
- font-family: 'Open Sans', sans-serif;
+ 
  text-rendering: optimizeLegibility !important;
  -webkit-font-smoothing: antialiased !important;
  }
@@ -48,10 +48,16 @@ p {
 
 
 /*NAVIGATION*/
-.active{
+
+#myNavbar{
+font-family: 'PT Serif', serif;
+    display: block;
+}
+
+#myNavbar .active{
     border-bottom: 4px solid cyan;
     opacity: 1.0;
-     color: black !important;
+     
     }
 
 
@@ -68,17 +74,18 @@ p {
 }
 
 .navbar a:hover{
+    cursor: pointer;
     opacity: 1;
     background-color: black !important;
 }
 
 
+
 @media (max-width:768px){
     
-    .active{
+#myNavbar  .active{
     border-bottom: 4px solid cyan;
     opacity: 1.0;
-     color: black !important;
     }
 
 
@@ -102,12 +109,50 @@ p {
     
 }
 
+
+
+
+
 /*HEADER*/
 
 
+
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0.4;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+
+
+
+
+
 .header{
-    height: auto;
-    width: 100%;
+height: auto;
+width: auto;
     padding: 30px 0 30px;
     margin-top: 50px;
     color: #fff;
@@ -127,7 +172,8 @@ p {
     height: 50px;
 }
 #myCarousel-inner{
-height: auto;
+    height: auto;
+    
 }
 
 @media (max-width:768px){
@@ -220,13 +266,29 @@ height: auto;
 
 
 /*PRICING*/
+#pricing h4{   
+    font-family: 'Tangerine', serif;
+    font-size: 28px;
+    letter-spacing:   1px;
+}
+
+#pricing h2{   
+    font-family: 'Tangerine', serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
 
 .packages{
+    border: 1px solid;
    height: 200px;
 }
 .pricing {
     padding: 50px 0 80px;
     text-align: center;
+    -moz-background: url("C:/Users/Bahuguna's/Desktop/all folder/Project/bootst/images/Tea-Sweets-Drink-HD-Wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
     background-color:  darkgray;
 }
 
@@ -293,9 +355,22 @@ height: auto;
 
 
 /*TEAM*/
+#team h2{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#team h4{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+#team b{
+    color: darkolivegreen;
+}
 
 .team {
-    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 16px;
     padding: 50px 0 80px;
     text-align: center;
 }
@@ -377,8 +452,18 @@ height: auto;
 
 /*CONTACT*/
 
+
+#contact h2{
+   font-family: 'Berkshire Swash', cursive;
+}
+
+#textarea{
+    font-size: 18px;
+    letter-spacing: 1px;  
+}
+
 .contact {
-    
+   font-family: 'Kaushan Script', cursive;
     padding: 50px 0 80px;
     text-align: center;
 }
@@ -427,9 +512,12 @@ height: auto;
 
 
 /*FOOTER*/
+.footer h4{
+    font-family: 'Berkshire Swash', cursive;
+}
 
 .footer {
-    
+    font-family: 'Berkshire Swash', cursive;
     padding: 30px;
     color: #cccccc;
     background-color: #222222;
